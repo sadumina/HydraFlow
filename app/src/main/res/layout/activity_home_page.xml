@@ -178,10 +178,21 @@
             <EditText
                 android:id="@+id/editTextText"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/background_edtitext_search"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="4dp"
+                android:textSize="16sp"
+                android:textColor="#8D8D8D"
+                android:textStyle="bold|italic"
                 android:ems="10"
                 android:inputType="text"
-                android:text="Name" />
+                android:hint="Search for..."
+                android:drawableEnd="@drawable/search_icon"
+                />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
