@@ -74,16 +74,13 @@
         app:srcCompat="@mipmap/back_bottom" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/imageView6"
         android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="64dp"
+        android:layout_height="200dp"
+        android:src="@mipmap/logo_new"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.446"
-        app:srcCompat="@mipmap/logo3" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

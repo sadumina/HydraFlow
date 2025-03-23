@@ -13,7 +13,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
+        android:layout_marginTop="128dp"
         android:layout_marginEnd="64dp"
+        android:layout_marginBottom="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,7 +65,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"
             android:background="@drawable/login_btn_background"
-            android:text="Button" />
+            android:text="Sign Up" />
     </LinearLayout>
 
     <ImageView
@@ -77,14 +79,12 @@
         app:srcCompat="@mipmap/back_bottom" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:id="@+id/imageView5"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/logo3" />
+        app:srcCompat="@mipmap/logo_new"
+        tools:layout_editor_absoluteX="105dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
