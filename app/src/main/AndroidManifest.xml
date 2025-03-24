@@ -13,6 +13,9 @@
         android:theme="@style/Theme.HydraFlow"
         tools:targetApi="31">
         <activity
+            android:name=".Tips_Page"
+            android:exported="false" />
+        <activity
             android:name=".Achivments_Page"
             android:exported="false" />
         <activity
