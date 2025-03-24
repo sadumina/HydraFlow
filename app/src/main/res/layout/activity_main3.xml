@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgorund"
-    tools:context=".`login page`">
+    tools:context=".MainActivity2"
+    >
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="322dp"
+        android:layout_height="283dp"
         android:layout_marginStart="64dp"
         android:layout_marginEnd="64dp"
         android:orientation="vertical"
@@ -20,36 +21,30 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.63">
 
-        <TextView
-            android:id="@+id/textView"
+        <EditText
+            android:id="@+id/editTextText3"
             android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/edittext_background"
-            android:gravity="center"
-            android:text="User Name"
-            android:textColor="#ffff"
-            android:textColorHint="#ffff" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Enter Your User Name"
+            android:inputType="text" />
 
-        <TextView
-            android:id="@+id/textView"
+        <EditText
+            android:id="@+id/Pwd"
             android:layout_width="match_parent"
-            android:layout_height="46dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/edittext_background"
-            android:gravity="center"
-            android:text="Password"
-            android:textColor="#ffff"
-            android:textColorHint="#ffff" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="text" />
 
         <Button
-            android:id="@+id/button"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="match_parent"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"
+            android:layout_weight="1"
             android:background="@drawable/login_btn_background"
             android:text="Login" />
 

@@ -2,11 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/btn"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgorund"
-    tools:context=".Achivments_Page">
+    tools:context=".Achivments_page">
 
     <LinearLayout
         android:id="@+id/linearLayout4"
@@ -35,7 +35,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView29"
+                android:id="@+id/imageset1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:srcCompat="@mipmap/achivments2" />
@@ -47,7 +47,7 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView30"
+                android:id="@+id/imageset2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:srcCompat="@mipmap/badges1" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
 
     <application
         android:allowBackup="true"
@@ -11,35 +11,49 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HydraFlow"
-        tools:targetApi="31">
+        tools:targetApi="31" >
+
+        <!-- MainActivity: Home Screen -->
         <activity
-            android:name=".Tips_Page"
-            android:exported="false" />
+            android:name=".MainActivity"
+            android:exported="true" /> <!-- Exported for navigation -->
+
+        <!-- Second Activity for Navigation -->
         <activity
-            android:name=".Achivments_Page"
-            android:exported="false" />
+            android:name=".MainActivity2"
+            android:exported="true" /> <!-- Changed from false to true -->
+
         <activity
-            android:name=".Goal_Page"
-            android:exported="false" />
+            android:name=".Tips_page"
+            android:exported="true" />
+        <activity
+            android:name=".Achivments_page"
+            android:exported="true" />
+        <activity
+            android:name=".Goal_page"
+            android:exported="true" />
         <activity
             android:name=".Home_Page"
-            android:exported="false" />
+            android:exported="true" />
+        <activity
+            android:name=".Signup_page"
+            android:exported="true" />
+
+        <!-- Splash Screen as the App Launcher -->
         <activity
             android:name=".Splash_page"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Signup_page"
-            android:exported="false" />
 
+        <!-- Preloaded fonts metadata -->
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
     </application>
 
 </manifest>
