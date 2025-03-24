@@ -23,43 +23,33 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:id="@+id/edit1"
+            android:id="@+id/editTextText4"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/edittext_background"
+            android:layout_height="wrap_content"
             android:ems="10"
-            android:gravity="center"
+            android:hint="Enter Your User Name"
             android:inputType="text"
-            android:text="Name" />
+             />
 
         <EditText
-            android:id="@+id/edit2"
+            android:id="@+id/editTextText5"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/edittext_background"
+            android:layout_height="wrap_content"
             android:ems="10"
-            android:gravity="center"
+            android:hint="Enter Yout Email"
             android:inputType="text"
-            android:text="Email" />
+             />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/editTextTextPassword"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/edittext_background"
+            android:layout_height="wrap_content"
             android:ems="10"
-            android:gravity="center"
-            android:inputType="text"
-            android:text="Password" />
+            android:hint="Enter Password"
+            android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnsignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -88,6 +78,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/logo_new" />
+        app:srcCompat="@mipmap/waterlogo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
