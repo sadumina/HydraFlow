@@ -12,7 +12,7 @@ class Tips_page : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_tips_page) // ✅ FIXED
+        setContentView(R.layout.activity_tips_page)
 
         val btnOpenWeb: Button = findViewById(R.id.btnexplore) // ✅ Make sure this ID exists in XML
         btnOpenWeb.setOnClickListener {

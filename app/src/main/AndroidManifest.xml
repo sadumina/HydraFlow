@@ -13,9 +13,11 @@
         android:theme="@style/Theme.HydraFlow"
         tools:targetApi="31">
         <activity
+            android:name=".Calander_page"
+            android:exported="true" />
+        <activity
             android:name=".Settings_page"
-            android:exported="false" />
-        <!-- Splash Screen (App Launcher) -->
+            android:exported="true" /> <!-- Splash Screen (App Launcher) -->
         <activity
             android:name=".Splash_page"
             android:exported="true">

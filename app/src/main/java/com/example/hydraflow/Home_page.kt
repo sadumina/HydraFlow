@@ -34,5 +34,18 @@ class Home_page : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val textView3: TextView = findViewById(R.id.settingtxt)
+        textView3.setOnClickListener {
+            val intent = Intent(this, Settings_page::class.java)
+            startActivity(intent)
+        }
+        val textView4: TextView = findViewById(R.id.watercalendartext)
+        textView4.setOnClickListener {
+            val intent = Intent(this, Calander_page::class.java)
+            startActivity(intent)
+        }
+
+
+
     }
 }
