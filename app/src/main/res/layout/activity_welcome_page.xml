@@ -38,11 +38,11 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/welcomebtn"
         android:layout_width="305dp"
         android:layout_height="67dp"
-        android:text="Get Started"
         android:backgroundTint="@color/blue"
+        android:text="Next"
         android:textColorLink="#872020" />
 
 </LinearLayout>

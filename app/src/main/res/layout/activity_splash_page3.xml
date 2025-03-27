@@ -2,11 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/splashbtn"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgorund"
-    tools:context=".Splash_page">
+    tools:context=".Splash_page3">
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -22,13 +22,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/splashbtn1"
+            android:id="@+id/splashbtn3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/login_btn_background"
             android:backgroundTint="@color/blue"
-            android:text="Get Started"
-            />
+            android:text="Drink with Us" />
     </LinearLayout>
 
     <TextView
@@ -37,7 +36,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/aclonica"
         android:gravity="center"
-        android:text="Welcome To Hydra Flow"
+        android:text="Drink Water Everyday"
         android:textColor="@color/black"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -46,7 +45,20 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.772" />
+        app:layout_constraintVertical_bias="0.771" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="Drink Water, Feel Better! 💙 Keep up with your hydration goals every day"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -66,5 +78,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@mipmap/back_bottom" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
