@@ -13,21 +13,34 @@
         android:theme="@style/Theme.HydraFlow"
         tools:targetApi="31">
         <activity
-            android:name=".Splash_page3"
+            android:name=".Settings_page"
             android:exported="false" />
+        <!-- Splash Screen (App Launcher) -->
+        <activity
+            android:name=".Splash_page"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Other Splash Pages -->
         <activity
             android:name=".Splash_page2"
             android:exported="false" />
         <activity
+            android:name=".Splash_page3"
+            android:exported="false" /> <!-- Welcome Page (After Splash Screen) -->
+        <activity
             android:name=".Welcome_page"
-            android:exported="false" /> <!-- MainActivity: Home Screen -->
+            android:exported="true" /> <!-- Changed from false to true -->
+        <!-- Main Activity -->
         <activity
             android:name=".MainActivity"
-            android:exported="true" /> <!-- Exported for navigation -->
-        <!-- Second Activity for Navigation -->
+            android:exported="true" /> <!-- Other Activities -->
         <activity
             android:name=".MainActivity2"
-            android:exported="true" /> <!-- Changed from false to true -->
+            android:exported="true" />
         <activity
             android:name=".Tips_page"
             android:exported="true" />
@@ -38,20 +51,11 @@
             android:name=".Goal_page"
             android:exported="true" />
         <activity
-            android:name=".Home_Page"
+            android:name=".Home_page"
             android:exported="true" />
         <activity
             android:name=".Signup_page"
-            android:exported="true" /> <!-- Splash Screen as the App Launcher -->
-        <activity
-            android:name=".Splash_page"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity> <!-- Preloaded fonts metadata -->
+            android:exported="true" /> <!-- Preloaded fonts metadata -->
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

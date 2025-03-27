@@ -8,21 +8,6 @@
     android:background="@drawable/backgorund"
     tools:context=".Tips_page">
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/aclonica"
-        android:gravity="center"
-        android:text="Tips for to be Hydarted"
-        android:textAlignment="center"
-
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
         android:id="@+id/linearLayout6"
         android:layout_width="415dp"
@@ -33,10 +18,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="401dp"
+            android:layout_height="130dp"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:text="Tips"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:text="Water is the key to a healthier you! 💧 Stay hydrated, boost your energy, and keep your mind sharp. Every sip brings you closer to better health—drink up and thrive!"
+            android:textColor="@color/black"
+            />
+
         <ImageView
             android:id="@+id/imageView17"
             android:layout_width="wrap_content"
-            android:layout_height="730dp"
+            android:layout_height="606dp"
             app:srcCompat="@mipmap/tips1" />
 
     </LinearLayout>
@@ -47,8 +54,10 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/blue"
         android:text="Explore More Tips"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="735dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

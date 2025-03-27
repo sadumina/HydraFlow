@@ -18,7 +18,7 @@ class MainActivity2 : AppCompatActivity() {
         btnlogin.setOnClickListener {
             Toast.makeText(this, "Button Clicked!", Toast.LENGTH_SHORT).show() // Debugging
 
-            val intent = Intent(this, Signup_page::class.java)
+            val intent = Intent(this, Welcome_page::class.java)
             startActivity(intent)
         }
         val btnSendData : Button = findViewById(R.id.btnlogin)
@@ -26,11 +26,11 @@ class MainActivity2 : AppCompatActivity() {
 
         btnSendData.setOnClickListener {
 
-            val name = editTextName.text.toString()
+           val name = editTextName.text.toString()
             val intent = Intent(this,Welcome_page::class.java)
-            intent.putExtra("User_name",name)
+           intent.putExtra("User_name",name)
             startActivity(intent)
-        }
+       }
 
     }
 }

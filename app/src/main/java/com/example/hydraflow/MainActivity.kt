@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         btnNavigate.setOnClickListener {
             Toast.makeText(this, "Button Clicked!", Toast.LENGTH_SHORT).show() // Debugging
 
-            val intent = Intent(this, MainActivity2::class.java)
+            val intent = Intent(this, Splash_page2::class.java)
             startActivity(intent)
         }
     }

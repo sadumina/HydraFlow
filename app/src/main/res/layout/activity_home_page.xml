@@ -2,11 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/splashbtn"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#e8e8f9"
-    tools:context=".Home_Page">
+    tools:context=".Home_page">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -111,7 +110,7 @@
                             app:srcCompat="@drawable/video_call" />
 
                         <TextView
-                            android:id="@+id/textView"
+                            android:id="@+id/achivmenttext"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="8dp"
@@ -138,7 +137,7 @@
                             app:srcCompat="@drawable/voice_call" />
 
                         <TextView
-                            android:id="@+id/textView6"
+                            android:id="@+id/goaltext"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="8dp"
@@ -229,10 +228,10 @@
                     app:layout_constraintTop_toTopOf="@+id/imageView11" />
 
                 <TextView
-                    android:id="@+id/textView8"
+                    android:id="@+id/tipstext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Follow tips for better life"
+                    android:text="Follow tips for better life-->"
                     android:textColor="#ffffff"
                     android:textSize="16sp"
                     android:textStyle="bold"

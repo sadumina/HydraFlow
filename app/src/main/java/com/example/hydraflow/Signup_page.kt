@@ -15,13 +15,13 @@ class Signup_page : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_signup_page)
 
-        val btnsignup: Button = findViewById(R.id.btnsignup)
-        btnsignup.setOnClickListener {
-            Toast.makeText(this, "Button Clicked!", Toast.LENGTH_SHORT).show() // Debugging
-
-            val intent = Intent(this, Home_Page::class.java)
-            startActivity(intent)
-        }
+//        val btnsignup: Button = findViewById(R.id.btnsignup)
+//        btnsignup.setOnClickListener {
+//            Toast.makeText(this, "Button Clicked!", Toast.LENGTH_SHORT).show() // Debugging
+//
+//            val intent = Intent(this, Home_Page::class.java)
+//            startActivity(intent)
+//        }
 
     }
 }
