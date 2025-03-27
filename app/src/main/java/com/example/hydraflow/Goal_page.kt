@@ -1,6 +1,9 @@
 package com.example.hydraflow
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +14,13 @@ class Goal_page : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_goal_page)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.splashbtn)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val btnNavigate: Button = findViewById(R.id.btnSaveGoal)
+        btnNavigate.setOnClickListener {
+            Toast.makeText(this, "Button Clicked!", Toast.LENGTH_SHORT).show() // Debugging
+
+            val intent = Intent(this, Done_page::class.java)
+            startActivity(intent)
         }
     }
 }

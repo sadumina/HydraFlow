@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
@@ -31,6 +32,12 @@ class MainActivity2 : AppCompatActivity() {
            intent.putExtra("User_name",name)
             startActivity(intent)
        }
+        val textView6: TextView = findViewById(R.id.linksign)
+        textView6.setOnClickListener {
+            val intent = Intent(this, Signup_page::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }

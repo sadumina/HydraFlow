@@ -45,6 +45,11 @@ class Home_page : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val textView5: TextView = findViewById(R.id.progesstext)
+        textView5.setOnClickListener {
+            val intent = Intent(this, Progress_page::class.java)
+            startActivity(intent)
+        }
 
 
     }
