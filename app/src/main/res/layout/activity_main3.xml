@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgorund"
-    tools:context=".MainActivity2"
-    >
+    tools:context=".MainActivity2">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -46,7 +45,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"
             android:layout_weight="1"
-            android:background="@drawable/login_btn_background"
+            android:backgroundTint="@color/blue"
             android:text="Login" />
 
         <TextView

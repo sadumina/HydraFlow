@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         val btnNavigate: Button = findViewById(R.id.btngetstarted)
         btnNavigate.setOnClickListener {
-            Toast.makeText(this, "Button Clicked!", Toast.LENGTH_SHORT).show() // Debugging
+            Toast.makeText(this, "Getstarted!", Toast.LENGTH_SHORT).show() // Debugging
 
             val intent = Intent(this, Splash_page2::class.java)
             startActivity(intent)

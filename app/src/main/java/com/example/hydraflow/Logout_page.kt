@@ -1,5 +1,6 @@
 package com.example.hydraflow
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -9,23 +10,29 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class Settings_page : AppCompatActivity() {
+class Logout_page : AppCompatActivity() {
+
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+        setContentView(R.layout.activity_logout_page)
 
 
-        setContentView(R.layout.activity_settings_page)
-
-
-        val btnNavigate3: Button = findViewById(R.id.btnlogout)
-        btnNavigate3.setOnClickListener {
+        val btnNavigate2: Button = findViewById(R.id.logoutbtn2)
+        btnNavigate2.setOnClickListener {
             Toast.makeText(this, "logout!", Toast.LENGTH_SHORT).show() // Debugging
 
-            val intent = Intent(this, Logout_page::class.java)
+            val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
         }
 
+        val btnNavigate3: Button = findViewById(R.id.back)
+        btnNavigate3.setOnClickListener {
+            Toast.makeText(this, "logout!", Toast.LENGTH_SHORT).show() // Debugging
 
+            val intent = Intent(this, Settings_page::class.java)
+            startActivity(intent)
+        }
     }
 }

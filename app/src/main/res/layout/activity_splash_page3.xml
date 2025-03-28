@@ -25,7 +25,6 @@
             android:id="@+id/splashbtn3"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/login_btn_background"
             android:backgroundTint="@color/blue"
             android:text="Drink with Us" />
     </LinearLayout>

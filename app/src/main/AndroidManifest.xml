@@ -3,17 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <queries>
+
         <!-- 📌 Allow opening web pages (supports both HTTP & HTTPS) -->
         <intent>
-            <action android:name="android.intent.action.VIEW"/>
-            <data android:scheme="http"/>
+            <action android:name="android.intent.action.VIEW" />
+
+            <data android:scheme="http" />
         </intent>
         <intent>
-            <action android:name="android.intent.action.VIEW"/>
-            <data android:scheme="https"/>
+            <action android:name="android.intent.action.VIEW" />
+
+            <data android:scheme="https" />
         </intent>
-
-
     </queries>
 
     <application
@@ -26,6 +27,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HydraFlow"
         tools:targetApi="31">
+        <activity
+            android:name=".Logout_page"
+            android:exported="true" />
         <activity
             android:name=".Done_page"
             android:exported="false" />

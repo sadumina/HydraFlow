@@ -24,9 +24,9 @@
             android:id="@+id/btngetstarted"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/login_btn_background"
             android:backgroundTint="@color/blue"
             android:contextClickable="false"
+
 
             android:text="Hydrate" />
     </LinearLayout>

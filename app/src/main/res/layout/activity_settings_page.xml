@@ -17,27 +17,29 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/settingstext">
+        app:layout_constraintTop_toBottomOf="@+id/settingstext"
+        tools:ignore="NotSibling">
 
         <TextView
             android:id="@+id/settingstext"
-            android:layout_width="400dp"
-            android:layout_height="114dp"
+            android:layout_width="match_parent"
+            android:layout_height="142dp"
             android:fontFamily="@font/aclonica"
             android:gravity="center"
+            android:textColor="@color/black"
             android:text="Settings"
             android:textSize="24sp" />
 
         <ImageView
             android:id="@+id/imageView16"
-            android:layout_width="match_parent"
-            android:layout_height="442dp"
+            android:layout_width="422dp"
+            android:layout_height="362dp"
             app:srcCompat="@mipmap/settings2" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="52dp"
             android:fontFamily="@font/aclonica"
             android:gravity="center"
             android:text="Trun on Dark Mode" />
@@ -48,6 +50,28 @@
             android:layout_height="61dp"
             android:gravity="center"
             android:text="Switch" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:text="Trun on Dark Mode" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="140dp"
+            android:layout_height="61dp"
+            android:gravity="center"
+            android:text="Switch" />
+
+        <Button
+            android:id="@+id/btnlogout"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:backgroundTint="@color/blue"
+            android:text="logout" />
 
     </LinearLayout>
 
